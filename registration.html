@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="Flying Mangos is the cheapest way for students to go on holidays. From places like Amsterdam, Ibiza and many more!"
+	name="description">
+    <meta content="student,holidays,Amsterdam,Ibiza,Cheap" name="keywords">
+    <meta content="Vladislavs Vasiljevs, Carl Moylan, Rafal Konarzewski" name="author">
+ 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/registration.css">
+	<script src="js/registration.js"></script>    
+
+    <title>Registration</title>
+</head>
+
+<body background="b.jpg"; >
+    <!-- The Top Banner Section -->
+
+
+    <div id="wrapper">
+        <div id="title">
+            <p>Flying Mangos Holidays
+            </p>
+
+
+            <div class="buttons">
+               <input type="button" value=" Login " onclick="window.location.href='login.html'">
+               <input type="button" value="Register" onclick="window.location.href='registration.html'">
+            </div>
+        </div>
+
+
+        <div id="slider">
+            <figure>
+                <img alt="" src="images/France.jpg"> <img alt="" src=
+                "images/Ibiza.jpg"> <img alt="" src="images/Amsterdam.jpg">
+                <img alt="" src="images/France.jpg"> <img alt="" src=
+                "images/Ibiza.jpg">
+            </figure>
+        </div>
+
+
+        <div id="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">Weekend</a>
+
+                        <ul>
+                            <li>
+                                <a href="edinburgh.html">Edinburgh</a>
+                            </li>
+
+
+                            <li>
+                                <a href="amsterdam.html">Amsterdam</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#">Adventure</a>
+
+                        <ul>
+                            <li>
+                                <a href="france.html">Cycling in France</a>
+                            </li>
+
+
+                            <li>
+                                <a href="shannon.html">Shannon Kayaking</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#">Sun Fun</a>
+
+                        <ul>
+                            <li>
+                                <a href="corfu.html">Corfu</a>
+                            </li>
+
+
+                            <li>
+                                <a href="ibiza.html">Ibiza</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+    
+	<!--- Registration Form ----->
+	
+	
+	<div>
+
+
+
+	<form name="myForm" onsubmit="return validateForm()"  method="post">
+		<fieldset>
+		<legend >Register:</legend><br /><br />
+			First name:<br /><input type="text" name="fname" maxlength="15" placeholder="eg John" size="20"><br />
+		
+			Last name:<br /><input type="text" name="lname" maxlength="15" placeholder="eg Murphy" size="20"><br />
+		
+			Gender:<br />Male<input type="radio" name="sex" value="male" checked><br />Female<input type="radio" name="sex" value="female"><br />Other<input type="radio" name="sex" value="other"><br />	
+		
+			Email:<br /><input type="email" name="email" placeholder="eg xxx@xxx.xxx"><br />		
+				
+			Telephone:<br /><input type="tel" name="usrtel" placeholder="eg 1234567"><br />
+		
+			County:<br /><select name="county">
+			<option></option>
+			<option value="choose">Choose your county</option>
+			<option value="dublin">Dublin </option>
+			<option value="cork">Cork</option>
+			<option value="limerick">Limerick</option>
+			<option value="galway">Galway</option>
+			<option value="carlow">Carlow</option>
+			<option value="cavan">Cavan</option>
+			<option value="clare">Clare</option>
+			<option value="donegal">Donegal</option>
+			<option value="kerry">Kerry</option>
+			<option value="kildare">Kildare</option>
+			<option value="kilkenny">Kilkenny</option>
+			<option value="laois">Laois</option>
+			<option value="leitrim">Leitrim</option>			
+			<option value="longford">Longford</option>
+			<option value="louth">Louth</option>
+			<option value="mayo">Mayo</option>
+			<option value="meath">Meath</option>
+			<option value="monaghan">Monaghan</option>
+			<option value="offaly">Offaly</option>
+			<option value="roscommon">Roscommon</option>
+			<option value="ligo">Sligo</option>
+			<option value="tipperary">Tipperary</option>
+			<option value="waterford ">Waterford </option>
+			<option value="westmeath">Westmeath</option>
+			<option value="wexford ">Wexford </option>
+			<option value="wicklow ">Wicklow </option>
+			</select><br /><br />
+		
+			Untick if you do not wish to recieve our newsletter:<input type="checkbox" name="letter" value="letter" checked="checked"><br>
+		 
+		 
+		 <input type="submit" value="Send" >
+		 </fieldset>
+	</form>
+		 
+</div>
+	
+	
+	
+	
+	
+	
+	 <footer>
+      
+<!-- This div is used for the left part of the footer to show information like address, phone number, email etc -->
+      <div class="section">
+        <p>215-555-555 IFSC Area<br>
+        Co Dublin<br>
+        mangos@gmail.com</p>
+      </div>
+
+<!-- Div to contain text/title and store social icons like twitter and google plus -->
+      <div class="socialicons">
+        <p><b>Connect With Us</b>
+        </p>
+
+
+        <ul>
+          <li>
+            <a href="https://plus.google.com/u/2/110836823605199557657" target="_blank"><img alt="GooglePlus" src="images/googleplus.png"></a>
+          </li>
+
+
+          <li>
+            <a href="https://twitter.com/MangosHolidays" target="_blank"><img alt="Twitter Icon" src="images/Twitter.png"></a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="section">
+        <p><a href="#" target="_blank">Designed By Vladislavs Vasiljevs, Carl Moylan and Rafal Konarzewski</a>
+        </p>
+      </div>
+    </footer>
+<!-- End of Footer  -->
+
+<!-- Simple copyright logo and text, before the wrapper is closed off  -->
+    <p style="text-align:center; padding: 0px;">&#169; Copyright - Flying Mangos, 2015</p>
+  </div>
+<!-- End of Wrapper  -->
+ </body>
+</html>
+<!-- End  -->

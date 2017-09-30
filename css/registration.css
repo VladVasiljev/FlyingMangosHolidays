@@ -1,0 +1,571 @@
+@import  "http://fonts.googleapis.com/css?family=Open+Sans";
+
+/* Body is anything outside off the wrapper div, can change colors, add background, assign font family across the whole website  */
+body {
+    background-repeat: no-repeat;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    background-color: #E9DEC2;
+	margin: 0;
+}
+
+/* Wrapper can change the size,height,backgroun color etc */
+#wrapper {
+ margin:0 auto;
+max-width:1200px;
+width:98%;
+background:#ffffff;
+border-radius:2px;
+box-shadow:0 0 10px;
+}
+
+/* Can change colors width off the tittle bar, colors and more */
+#title {
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    border-bottom: 2px solid #F07334;
+}
+
+/* Controls the text within the title bar */
+#title p {
+    text-align: center;
+    padding: .2% 6% 0 0;
+    font-size: 20px;
+	width: 100%;
+	color: #F07334;
+}
+
+#title p a {
+    text-decoration: none;
+}
+
+
+/* Start of Scrolling images banner on the top off the web page */
+/* Using CCS 3 animation code @keyframes allows use to move our images in a slideshow form */
+@keyframes slidy {
+0% {
+    left: 0;
+}
+
+20% {
+    left: 0;
+}
+
+25% {
+    left: -100%;
+}
+
+45% {
+    left: -100%;
+}
+
+50% {
+    left: -200%;
+}
+
+70% {
+    left: -200%;
+}
+
+75% {
+    left: -300%;
+}
+
+95% {
+    left: -300%;
+}
+
+100% {
+    left: -400%;
+}
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slidy infinite;
+}
+/* End of Slider */
+
+/* Allows us to not having scroll bars making the page look clean */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Start of Footer */
+/* Can style the footer section, backgrounds,height, width, borders etc */
+footer {
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+    border-top: 2px solid #F07334;
+    max-height: 120px;
+}
+/* Styles the footer parapgragh tags */
+footer p {
+    color: #fff;
+    padding-top: 0;
+}
+
+/* Controls the images at the footer, like removing the list style etc */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+ul li img {
+    height: 48px;
+    padding-bottom: 10px;
+}
+
+/************** SocialLicons **************/
+/* Controls the Social media icons div  in the footer */
+.socialicons {
+    width: 29%;
+    float: left;
+    margin: 2%;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.socialicons img {
+    margin-top: -18px;
+}
+
+
+/* End of Footer */
+
+/* Controls the logo on the left top side on the page */
+.Logo {
+    margin-top: 0;
+    margin-left: 38px;
+    float: left;
+}
+
+/* Controls the Date made from JS   */
+.date {
+    margin-top: -42px;
+    margin-left: 50px;
+    width: 9%;
+}
+/* Controls the Time made from JS   */
+.time {
+    margin-top: -30px;
+    margin-left: 160px;
+    width: 9%;
+}
+
+
+
+
+/* Start of Drop Down Navigation */
+
+/* Can change color off the bar and posistion it higher or low etc */
+nav {
+    margin: 1px 0;
+    background-color: #EF6825;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+/* Changes the color off the drop down menu's  */
+nav ul li {
+    display: inline-block;
+    background-color: #EF6825;
+}
+
+/* Can change color off the text, height, font size etc  */
+nav a {
+    display: block;
+    padding: 0 50px;
+    color: #333;
+    font-size: 20px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+/* Changes the color off the sub menu when move is over it */
+nav a:hover {
+    background-color: #fff;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* Can change the width of the drop down etc  */
+nav ul ul li {
+    width: 280px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+
+/* Change position of the Wether App/Widget */
+.Dublin {
+    float: left;
+    margin-left: 50px;
+	margin-top: 10px;
+}
+
+/* Controls the login and register buttons   */
+.buttons {
+	width: 20%;
+	margin-left: 1%;
+	float: left;
+	margin-top: -4%;
+	}
+	
+	
+
+
+/* Another Image Slider that is used to show pictures off the holidays */
+.slides {
+	width: 40%;
+	height: 40%;
+	margin-left: 25%;
+	margin-top: -10%;
+	overflow: hidden;
+	float: left;
+}
+
+.slidesContainer {
+   width: 1800px; 
+   -webkit-animation: slide 15s ease infinite;
+}
+
+.slides .slide {
+   width: 600px;
+   height: 300px;
+   float: left;
+}
+
+
+
+@keyframes slide {
+  15% {margin-left: 0px;}
+  30% {margin-left: 0px;}
+  45% {margin-left: -600px;}
+  60% {margin-left: -600px;}
+  75% {margin-left: -1200px;}
+  90% {margin-left: -1200px;}
+  100% {margin-left: 0px;}
+}
+/* End of Slider */
+
+
+/* Custom button to book */
+.btn {
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	background: #F07334;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	width: 10%;
+	height: 10%;
+	margin-left: 85%;
+}
+
+/* Button will change colour when mouse is over it */
+.btn:hover {
+  background: #e07743;
+  background-image: -webkit-linear-gradient(top, #e07743, #e07743);
+  background-image: -moz-linear-gradient(top, #e07743, #e07743);
+  background-image: -ms-linear-gradient(top, #e07743, #e07743);
+  background-image: -o-linear-gradient(top, #e07743, #e07743);
+  background-image: linear-gradient(to bottom, #e07743, #e07743);
+  text-decoration: none;
+}
+
+
+/* Can control the logo and the time and date */
+.timeAndDate{
+width:55%;
+float:left;
+margin:1% 1% 1% 0%;
+}
+
+/* Controls the main text with holiday information */
+	.maintext{
+	width: 50%;
+	float: left;
+	margin-top: 5%;
+	margin-left: -42%;
+}
+
+/* Controls the title off the holiday and it's description off price */
+.price {
+margin-bottom: 10%;
+}
+
+.price p {
+margin-top: -2%;
+margin-left: 66%;
+}
+
+/* Can make changes to the footer to things like copyright and Designed by sections */
+.section{
+width:29%;
+float:left;
+margin:2%;
+text-align:center;
+font-size: 12px;
+}
+
+
+.section a {
+text-decoration: none;
+color: #fff;	
+}
+	
+	
+	
+	
+	
+	
+	
+	.forms {
+	margin: 0 auto;
+	width: 50%;
+	
+	}
+	
+	
+	/* VALIDATED Form border, change color of the form, add border, size off the form */
+fieldset {
+  background: green;
+  border: 2px solid #EF6825;
+  width: 15%;
+  height: 50%;
+  color:white;
+  padding: 50px;
+  border-radius:12px;
+  margin:0 auto;
+}
+
+legend {
+	float:left;
+	color:orange;
+	text-shadow: 2px 2px black;
+	font-size: 150%;
+	
+}
+
+	/* VALIDATED  */
+textarea {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  margin: 8px;
+  border: 2px solid #000;
+  padding: 10px;
+  
+}
+
+
+	
+	
+	
+	
+	
+/* Reponsive Web */
+
+@media screen and (max-width:320px){
+	body{
+	font-size:13px;
+	}
+	
+		.maintext{
+	width: 25%;
+	float: left;
+	margin-top: 40%;
+	margin-left: -28%;
+}
+
+.buttons {
+	display: none;
+}
+
+.socialicons img {
+     margin-top: -10%;
+	width: 30%;
+	height: 30%
+}
+	
+
+	fieldset {
+	background: rgba(12,3,25,0.8);
+	border: 2px solid #EF6825;
+	width: 200px;
+	height: 410px;
+	padding: 50px;
+}
+
+
+
+.forms input {
+  width: 20%;
+  margin: 8px;
+  border: 2px solid #000;
+  padding: 10px;
+}
+
+textarea {
+  height: 200px;
+  width: 200px;
+  resize: none;
+  margin: 8px;
+  border: 2px solid #000;
+  padding: 10px;
+}
+	
+}
+
+@media screen and (max-width:923px){
+
+
+nav ul{
+list-style:none;
+
+}
+
+
+nav ul li{
+text-align:left;
+width:100%;
+border: 1px solid black;
+
+}
+nav ul li a{
+font-size:12px;
+
+}
+
+.section{
+	font-size: 10px;
+}
+
+.time {
+display:none;	
+}
+
+.date {
+display: none;	
+}
+
+	.maintext{
+	width: 80%;
+	float: right;
+	margin-top: -1%;
+	margin-right: 18%;
+}
+
+	.maintext h2{
+	width: 80%;
+	float: right;
+	margin-top: 1%;
+	margin-right: 15%;
+}
+
+	.maintext p{
+	width: 80%;
+	float: right;
+	margin-top: 1%;
+	margin-right: 15%;
+}
+
+
+.price {
+margin-top: -50%;
+}
+
+.price p {
+margin-top: 1%;
+margin-left: 8%;
+}
+
+.price h2 {
+margin-top: 79%;
+margin-left: 10%;
+}
+
+
+.btn {
+	margin-left: 15%;
+	margin-top: 2%;
+	float: left;	
+}
+
+#slider{
+	display: none;
+}
+
+.Logo {
+display: none;
+}
+
+.slides {
+	width: 40%;
+	height: 40%;
+	margin-left: 15%;
+	margin-top: 5%;
+	overflow: hidden;
+	float: left;
+}
+
+}
+
+@media screen and (max-width:1131px){
+	
+	.time {
+	display: none;	
+	}
+	
+	.date {
+	display: none;	
+	}
+	
+	
+}
+
+
+
+
+
+
